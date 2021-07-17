@@ -7,6 +7,7 @@ import {NextArrow, PrevArrow} from "./Arrows.components";
 
 
 
+
 const HeroCarousal = () => {
    const settingsLG = {
      arrows: true,
@@ -46,7 +47,7 @@ const HeroCarousal = () => {
                      <img src = {image} alt ="testing" className="w-full h-full rounded-md" />
                   </div>
               ))}
-             </Slider>>
+             </Slider>
              </div>
 
         <div className="hidden lg:block">
