@@ -1,11 +1,11 @@
-import React from 'react'
+import MovieHero from "../components/MovieHero/MovieHero.component";
 
-const Moviepage = () => {
+const Movie = () => {
     return (
-        <>
-          hai im the moviepage
-        </>
-    )
-}
+      <>
+        <MovieHero />
+      </>
+    );
+};
 
-export default Moviepage;
+export default Movie;
