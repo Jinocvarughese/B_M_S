@@ -8,6 +8,9 @@ import Postercarosal from '../../config/Postercarousal.config';
 
 
  const PosterSlider = (props) => {
+
+  const sliderConfig = props.config ? props.config : Postercarosal
+
     return (
         <>
         <div className="flex flex-col items-start my-6">
@@ -20,7 +23,7 @@ import Postercarosal from '../../config/Postercarousal.config';
                 {props.subtitle}
             </p>
         </div>
-        <Slider {...Postercarosal}>
+        <Slider {...sliderConfig}>
             {props.images.map((image) => (
                 <Poster {...image} isDark={props.isDark} />
             ))}
