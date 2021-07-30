@@ -19,7 +19,7 @@ const Movielayout = (props) => {
      setMovie(getMovieData.data);
     };
     requestMovie();
-  }, []);
+  }, [id]);  // when id changes the display of the movie or the movie changes too
 
     return (
         <>  
