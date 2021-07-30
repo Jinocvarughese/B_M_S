@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import { MovieContext } from '../../context/movie.context';
+
+
+//context
 import Movieinfo from './Movieinfo.component';
 
 
 const MovieHero = () => {
+    const {movie} = useContext(MovieContext);
     return (
         <>  
         <div>
@@ -18,7 +23,7 @@ const MovieHero = () => {
                    
                    
                     <img
-                    src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/the-courier-2021-et00137324-19-06-2021-11-33-11.jpg"
+                    src = {`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
                     alt="poster"
                     className="w-full h-full"
                     />
@@ -33,7 +38,7 @@ const MovieHero = () => {
                 </div>
             
             <img
-                    src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/the-courier-2021-et00137324-19-06-2021-11-33-11.jpg"
+                   src = {`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
                     alt="poster"
                     className="w-full h-full"
                     />
@@ -51,7 +56,7 @@ const MovieHero = () => {
           <div className="absolute z-30 left-24 top-10 flex items-center gap-10">
           <div className=" w-64 h-96 ">
               <img 
-                 src="https://in.bmscdn.com/iedb/movies/images/extra/horizontal_no_logo/mobile/listing/xxlarge/the-courier-2021-et00137324-19-06-2021-11-33-11.jpg"
+                 src = {`https://image.tmdb.org/t/p/original${movie.backdrop_path}`} 
                  alt="poster"
                  className="w-full h-full rounded-xl"
                />
@@ -61,7 +66,7 @@ const MovieHero = () => {
           </div>
           </div>
             <img
-                    src="https://in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/the-courier-2021-et00137324-19-06-2021-11-33-11.jpg"
+                   src = {`https://image.tmdb.org/t/p/original${movie.poster_path}`} 
                     alt="poster"
                     className="w-full h-full"
                     />
